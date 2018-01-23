@@ -26,7 +26,7 @@ class Gfe_SphinxSearch_Helper_Data extends Mage_Core_Helper_Abstract {
 			'data_index'      => $dataindex_field_weight,
 		]);
 		$sphinx->setLimits(0, 200, 1000, 5000);
-		// 랭킹모드설명, http://sphinxsearch.com/docs/current/builtin-rankers.html
+		// ranking mode description: http://sphinxsearch.com/docs/current/builtin-rankers.html
 		// $sphinx->setRankingMode(SphinxClient::SPH_RANK_EXPR, '@count asc');
 		$sphinx->setRankingMode(SphinxClient::SPH_RANK_SPH04, '');
 
@@ -44,7 +44,7 @@ class Gfe_SphinxSearch_Helper_Data extends Mage_Core_Helper_Abstract {
 
 			// As long as this isn't a standard attribute use it in our
 			// concatenated column.
-			if (!in_array($key, ['cobay_ham', 'sku', 'name', 'description', 'short_description', 'meta_keywords', 'meta_title'])) {
+			if (!in_array($key, ['sku', 'name', 'description', 'short_description', 'meta_keywords', 'meta_title'])) {
 				$_attributes[ $key ] = $value;
 			}
 
