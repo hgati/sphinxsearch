@@ -2,7 +2,7 @@
 	"name": "hgati/sphinxsearch",
 	"type": "magento-module",
 	"license":"OSL-3.0",
-	"description": "sphinxsearch for my custom magento",
+	"description": "Sphinxsearch for Magento",
 
     "extra": {
     	"map": [
